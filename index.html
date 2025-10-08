@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma digital para ONGs: gestão de projetos, voluntariado, doações e transparência.">
+    <title>ONG Conecta - Plataforma para ONGs</title>
+    <!-- Fonte web exemplo -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- CSS externo (crie depois em /css/style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html" class="logo" aria-label="Página inicial">
+            </a>
+        </h1>
+
+        <nav aria-label="Menu principal">
+            <a href="index.html" aria-current="page">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="voluntariado.html">Voluntariado</a>
+            <a href="doacoes.html">Como Doar</a>
+            <a href="transparencia.html">Transparência</a>
+            <a href="contato.html">Contato</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal"><img src="imgs/logo_ong_concta.png" class="logo_ong_concta"></h1>
+            <p>Transformando vidas através do engajamento social. Junte-se a nós!</p>
+            <picture>
+                <source srcset="assets/banner.webp" type="image/webp">
+                <source srcset="assets/banner.jpg" type="image/jpeg">
+                <img src="assets/banner.jpg" alt="Equipe de voluntários sorrindo" loading="lazy" width="100%"
+                    height="auto">
+            </picture>
+        </section>
+
+        <section aria-labelledby="missao">
+            <h2 id="missao">Missão, Visão e Valores</h2>
+            <ul>
+                <li><strong>Missão:</strong> Promover impacto social sustentável.</li>
+                <li><strong>Visão:</strong> Ser referência em transformação social.</li>
+                <li><strong>Valores:</strong> Transparência, Inclusão, Respeito.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="destaques">
+            <h2 id="destaques">Destaques</h2>
+            <div class="cards">
+                <article>
+                    <h3>Projetos em andamento</h3>
+                    <p>Conheça nossos projetos sociais e participe.</p>
+                    <a href="projetos.html">Ver projetos</a>
+                </article>
+                <article>
+                    <h3>Seja voluntário</h3>
+                    <p>Faça parte do nosso time e transforme vidas.</p>
+                    <a href="voluntariado.html">Inscreva-se</a>
+                </article>
+                <article>
+                    <h3>Transparência</h3>
+                    <p>Acompanhe nossos relatórios e prestação de contas.</p>
+                    <a href="transparencia.html">Saiba mais</a>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="galeria">
+            <h2 id="galeria">Galeria de Fotos</h2>
+            <div class="galeria">
+                <!-- Exemplo de 4 imagens, repita até 20 -->
+                <picture>
+                    <source srcset="assets/galeria1.webp" type="image/webp">
+                    <img src="assets/galeria1.jpg" alt="Ação social em comunidade" loading="lazy" width="150"
+                        height="100">
+                </picture>
+                <picture>
+                    <source srcset="assets/galeria2.webp" type="image/webp">
+                    <img src="assets/galeria2.jpg" alt="Voluntários em atividade" loading="lazy" width="150"
+                        height="100">
+                </picture>
+                <picture>
+                    <source srcset="assets/galeria3.webp" type="image/webp">
+                    <img src="assets/galeria3.jpg" alt="Entrega de doações" loading="lazy" width="150" height="100">
+                </picture>
+                <picture>
+                    <source srcset="assets/galeria4.webp" type="image/webp">
+                    <img src="assets/galeria4.jpg" alt="Evento de arrecadação" loading="lazy" width="150" height="100">
+                </picture>
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+        </section>
+
+        <section aria-labelledby="video">
+            <h2 id="video">Vídeo Institucional</h2>
+            <video controls width="400" poster="assets/video-poster.jpg">
+                <source src="assets/institucional.mp4" type="video/mp4">
+                <source src="assets/institucional.webm" type="video/webm">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+
+        <section aria-labelledby="audio">
+            <h2 id="audio">Depoimentos</h2>
+            <audio controls>
+                <source src="assets/depoimento.ogg" type="audio/ogg">
+                <source src="assets/depoimento.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+        <section aria-labelledby="newsletter">
+            <h2 id="newsletter">Assine nossa Newsletter</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Receba novidades</legend>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    <label for="preferencias">Preferências:</label>
+                    <select id="preferencias" name="preferencias" multiple>
+                        <option value="projetos">Projetos</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="transparencia">Transparência</option>
+                    </select>
+                    <button type="submit">Assinar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section aria-labelledby="graficos">
+            <h2 id="graficos">Nossos Resultados</h2>
+            <div class="graficos">
+                <figure>
+                    <figcaption>Distribuição de recursos por projeto</figcaption>
+                    <canvas id="graficoPizza" width="200" height="200" aria-label="Gráfico de pizza"></canvas>
+                </figure>
+                <figure>
+                    <figcaption>Evolução de voluntários</figcaption>
+                    <canvas id="graficoLinha" width="200" height="200" aria-label="Gráfico de linha"></canvas>
+                </figure>
+                <figure>
+                    <figcaption>Impacto social por região</figcaption>
+                    <canvas id="graficoBarra" width="200" height="200" aria-label="Gráfico de barras"></canvas>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <strong>ONG Conecta</strong> <br>
+            Rua Exemplo, 123 - São Paulo, SP <br>
+            <a href="mailto:contato@ongconecta.org">contato@ongconecta.org</a> <br>
+            <a href="tel:+5511999999999">+55 11 99999-9999</a>
+        </address>
+        <p>&copy; 2025 ONG Conecta. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts para gráficos (exemplo simples, substitua por Chart.js ou similar se desejar) -->
+    <script>
+        // Gráfico de pizza
+        const pizza = document.getElementById('graficoPizza').getContext('2d');
+        pizza.fillStyle = '#4CAF50';
+        pizza.beginPath();
+        pizza.moveTo(100, 100);
+        pizza.arc(100, 100, 80, 0, Math.PI * 1.2);
+        pizza.lineTo(100, 100);
+        pizza.fill();
+        pizza.fillStyle = '#FFC107';
+        pizza.beginPath();
+        pizza.moveTo(100, 100);
+        pizza.arc(100, 100, 80, Math.PI * 1.2, Math.PI * 2);
+        pizza.lineTo(100, 100);
+        pizza.fill();
+
+        // Gráfico de linha (simples)
+        const linha = document.getElementById('graficoLinha').getContext('2d');
+        linha.strokeStyle = '#2196F3';
+        linha.beginPath();
+        linha.moveTo(10, 190);
+        linha.lineTo(50, 150);
+        linha.lineTo(90, 100);
+        linha.lineTo(130, 80);
+        linha.lineTo(170, 40);
+        linha.stroke();
+
+        // Gráfico de barras
+        const barra = document.getElementById('graficoBarra').getContext('2d');
+        barra.fillStyle = '#E91E63';
+        barra.fillRect(20, 120, 30, 80);
+        barra.fillStyle = '#9C27B0';
+        barra.fillRect(70, 80, 30, 120);
+        barra.fillStyle = '#03A9F4';
+        barra.fillRect(120, 60, 30, 140);
+    </script>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
