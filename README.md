@@ -23,4 +23,4 @@ Todo o conteúdo é *fictício* e foi criado *para fins de estudo*.
 ---
 
 ## 🚀 Acesse o Site
-👉 [Clique aqui para acessar o projeto](file:///C:/Users/kauar/OneDrive/Desktop/programacaoweb/html/index.html)
+👉 [Clique aqui para acessar o projeto](file:///OneDrive/Desktop/programacaoweb/html/index.html)
