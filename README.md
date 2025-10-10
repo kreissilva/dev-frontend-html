@@ -19,8 +19,3 @@ O site ainda *não possui funcionalidades reais, sendo voltado apenas para fins 
 ## ⚠ Aviso
 O projeto é *apenas um protótipo* e *não representa uma ONG real*.  
 Todo o conteúdo é *fictício* e foi criado *para fins de estudo*.
-
----
-
-## 🚀 Acesse o Site
-👉 [Clique aqui para acessar o projeto](file:///OneDrive/Desktop/programacaoweb/html/index.html)
