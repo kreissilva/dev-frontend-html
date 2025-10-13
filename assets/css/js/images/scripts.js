@@ -1,4 +1,3 @@
-// assets/js/scripts.js
 // Máscaras para os campos do formulário
 document.addEventListener('DOMContentLoaded', function() {
     // Máscara para CPF
