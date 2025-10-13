@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - ONG</title>
     <meta name="description" content="Cadastre-se para ser um voluntário ou doador.">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="container">
+<body>
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <h1>ONG Transforma Vida</h1>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        <h1>ONG Transforma Vida</h1>
         <nav>
-            <ul id="menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
@@ -27,61 +19,83 @@
     </header>
 
     <main>
-        <div class="grid">
-            <div class="card" style="grid-column: span 12;">
-                <h2>Cadastre-se</h2>
-                <form id="formCadastro">
-                    <fieldset>
-                        <legend>Dados Pessoais</legend>
-                        <div class="form-group">
-                            <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome" name="nome" required minlength="3" maxlength="100">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cpf">CPF *</label>
-                            <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone">Telefone *</label>
-                            <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(11) 99999-9999">
-                        </div>
-                        <div class="form-group">
-                            <label for="dataNascimento">Data de Nascimento *</label>
-                            <input type="date" id="dataNascimento" name="dataNascimento" required>
-                        </div>
-                    </fieldset>
+        <h2>Cadastre-se</h2>
+        <form id="formCadastro">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required minlength="3" maxlength="100">
+                </div>
+                <div>
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="cpf">CPF *</label>
+                    <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                </div>
+                <div>
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(11) 99999-9999">
+                </div>
+                <div>
+                    <label for="dataNascimento">Data de Nascimento *</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+            </fieldset>
 
-                    <fieldset>
-                        <legend>Endereço</legend>
-                        <div class="form-group">
-                            <label for="cep">CEP *</label>
-                            <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
-                        </div>
-                        <div class="form-group">
-                            <label for="endereco">Endereço *</label>
-                            <input type="text" id="endereco" name="endereco" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cidade">Cidade *</label>
-                            <input type="text" id="cidade" name="cidade" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="estado">Estado *</label>
-                            <select id="estado" name="estado" required>
-                                <option value="">Selecione</option>
-                                <!-- Opções dos estados -->
-                            </select>
-                        </div>
-                    </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <div>
+                    <label for="cep">CEP *</label>
+                    <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
+                </div>
+                <div>
+                    <label for="endereco">Endereço *</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+                <div>
+                    <label for="cidade">Cidade *</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">Estado *</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </fieldset>
 
-                    <button type="submit" class="btn">Cadastrar</button>
-                </form>
-            </div>
-        </div>
+            <button type="submit">Cadastrar</button>
+        </form>
     </main>
 
     <footer>
@@ -116,15 +130,6 @@
             }
             e.target.value = value;
         });
-
-        // Menu Hambúrguer
-        const menuToggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
     </script>
-    <script src="../js/scripts.js"></script>
 </body>
 </html>

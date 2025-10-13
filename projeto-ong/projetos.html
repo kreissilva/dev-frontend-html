@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - ONG</title>
     <meta name="description" content="Conheça nossos projetos e saiba como participar.">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="container">
+<body>
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <h1>ONG Transforma Vida</h1>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        <h1>ONG Transforma Vida</h1>
         <nav>
-            <ul id="menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
@@ -27,53 +19,34 @@
     </header>
 
     <main>
-        <section class="grid">
-            <div class="card" style="grid-column: span 12;">
-                <h2>Nossos Projetos</h2>
-            </div>
-            <article class="card" style="grid-column: span 6;">
+        <section>
+            <h2>Nossos Projetos</h2>
+            <article>
                 <h3>Projeto Educar</h3>
                 <p>Oferecemos aulas de reforço escolar para crianças carentes.</p>
-                <img src="assets/images/projeto-educar.jpg" alt="Crianças estudando" width="100%">
+                <img src="assets/images/projeto-educar.jpg" alt="Crianças estudando" width="400">
             </article>
-            <article class="card" style="grid-column: span 6;">
+            <article>
                 <h3>Projeto Alimentação Saudável</h3>
                 <p>Distribuímos cestas básicas e oferecemos orientação nutricional.</p>
-                <img src="assets/images/projeto-alimentacao.jpg" alt="Distribuição de alimentos" width="100%">
+                <img src="assets/images/projeto-alimentacao.jpg" alt="Distribuição de alimentos" width="400">
             </article>
         </section>
 
-        <section class="grid">
-            <div class="card" style="grid-column: span 12;">
-                <h2>Voluntariado</h2>
-                <p>Venha ser um voluntário e fazer a diferença na comunidade.</p>
-                <a href="cadastro.html" class="btn">Seja Voluntário</a>
-            </div>
+        <section>
+            <h2>Voluntariado</h2>
+            <p>Venha ser um voluntário e fazer a diferença na comunidade.</p>
         </section>
 
-        <section class="grid">
-            <div class="card" style="grid-column: span 12;">
-                <h2>Doações</h2>
-                <p>Sua doação é muito importante para continuarmos nosso trabalho.</p>
-                <p>Pix: doe@ongtransformavida.org</p>
-                <a href="cadastro.html" class="btn btn-secondary">Fazer Doação</a>
-            </div>
+        <section>
+            <h2>Doações</h2>
+            <p>Sua doação é muito importante para continuarmos nosso trabalho.</p>
+            <p>Pix: doe@ongtransformavida.org</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 ONG Transforma Vida. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ONG Transforma Vida. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        // Menu Hambúrguer
-        const menuToggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
-    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

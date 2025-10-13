@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG - Página Inicial</title>
     <meta name="description" content="Conheça nossa ONG e saiba como ajudar.">
-    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="container">
+<body>
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <h1>ONG Transforma Vida</h1>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+        <h1>ONG Transforma Vida</h1>
         <nav>
-            <ul id="menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
@@ -27,39 +19,24 @@
     </header>
 
     <main>
-        <section class="grid">
-            <div class="card" style="grid-column: span 12;">
-                <h2>Sobre Nós</h2>
-                <p>Somos uma organização não governamental que atua há 10 anos transformando a vida de milhares de pessoas.</p>
-                <img src="assets/images/ong-image.jpg" alt="Foto da equipe da ONG" width="400">
-            </div>
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Somos uma organização não governamental que atua há 10 anos transformando a vida de milhares de pessoas.</p>
+            <img src="assets/images/ong-image.jpg" alt="Foto da equipe da ONG" width="400">
         </section>
 
-        <section class="grid">
-            <div class="card" style="grid-column: span 12;">
-                <h2>Contato</h2>
-                <address>
-                    <p>Email: contato@ongtransformavida.org</p>
-                    <p>Telefone: (11) 1234-5678</p>
-                    <p>Endereço: Rua das Flores, 123 - São Paulo, SP</p>
-                </address>
-            </div>
+        <section>
+            <h2>Contato</h2>
+            <address>
+                <p>Email: contato@ongtransformavida.org</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua das Flores, 123 - São Paulo, SP</p>
+            </address>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 ONG Transforma Vida. Todos os direitos reservados.</p>
+        <p>&copy; 2025 ONG Transforma Vida. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        // Menu Hambúrguer
-        const menuToggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
-    <script src="../js/scripts.js"></script>
 </body>
 </html>
