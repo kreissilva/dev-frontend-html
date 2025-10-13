@@ -3,86 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONG Solidária - Plataforma de Apoio a Causas Sociais</title>
-    <meta name="description" content="Plataforma web para ONGs gerenciarem atividades, divulgarem projetos, captarem recursos e engajarem voluntários">
-    <meta name="keywords" content="ONG, voluntariado, doações, projetos sociais, impacto social">
+    <title>ONG - Página Inicial</title>
+    <meta name="description" content="Conheça nossa ONG e saiba como ajudar.">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <!-- Cabeçalho e Navegação -->
-    <header role="banner">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html" aria-label="ONG Solidária - Página inicial">
-                    <img src="assets/images/logo-ong.png" alt="Logo ONG Solidária" width="200" height="60">
-                </a>
+<body class="container">
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>ONG Transforma Vida</h1>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <nav role="navigation" aria-label="Navegação principal">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Início</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="cadastro.html">Cadastre-se</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Conteúdo Principal -->
-    <main role="main">
-        <!-- Página Inicial (index.html) -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Transformando vidas através da solidariedade</h1>
-                <p>A ONG Solidária atua há mais de 10 anos promovendo desenvolvimento social e oportunidades para comunidades em situação de vulnerabilidade.</p>
-                <a href="cadastro.html" class="btn-primary">Junte-se a nós</a>
+    <main>
+        <section class="grid">
+            <div class="card" style="grid-column: span 12;">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma organização não governamental que atua há 10 anos transformando a vida de milhares de pessoas.</p>
+                <img src="assets/images/ong-image.jpg" alt="Foto da equipe da ONG" width="400">
             </div>
         </section>
 
-        <section class="about">
-            <div class="container">
-                <h2>Sobre Nossa Organização</h2>
-                <div class="about-content">
-                    <article>
-                        <h3>Nossa Missão</h3>
-                        <p>Promover o desenvolvimento sustentável de comunidades carentes através de projetos educacionais, de geração de renda e assistência social.</p>
-                    </article>
-                    <article>
-                        <h3>Nossa Visão</h3>
-                        <p>Ser referência nacional em transformação social, construindo uma sociedade mais justa e igualitária.</p>
-                    </article>
-                    <article>
-                        <h3>Nossos Valores</h3>
-                        <ul>
-                            <li>Transparência</li>
-                            <li>Comprometimento</li>
-                            <li>Solidariedade</li>
-                            <li>Sustentabilidade</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container">
-                <h2>Entre em Contato</h2>
+        <section class="grid">
+            <div class="card" style="grid-column: span 12;">
+                <h2>Contato</h2>
                 <address>
-                    <p><strong>Endereço:</strong> Rua das Flores, 123 - Centro, São Paulo/SP</p>
-                    <p><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-                    <p><strong>E-mail:</strong> <a href="mailto:contato@ongsolidaria.org.br">contato@ongsolidaria.org.br</a></p>
+                    <p>Email: contato@ongtransformavida.org</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Endereço: Rua das Flores, 123 - São Paulo, SP</p>
                 </address>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer role="contentinfo">
-        <div class="container">
-            <p>&copy; 2023 ONG Solidária. Todos os direitos reservados.</p>
-            <p>CNPJ: 12.345.678/0001-90</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 ONG Transforma Vida. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        // Menu Hambúrguer
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
     <script src="../js/scripts.js"></script>
 </body>
 </html>

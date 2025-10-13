@@ -3,164 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se - ONG Solidária</title>
-    <meta name="description" content="Cadastre-se como voluntário ou doador da ONG Solidária">
+    <title>Cadastro - ONG</title>
+    <meta name="description" content="Cadastre-se para ser um voluntário ou doador.">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <header role="banner">
-        <!-- Mesma estrutura do header da página inicial -->
+<body class="container">
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>ONG Transforma Vida</h1>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main role="main">
-        <section class="registration">
-            <div class="container">
-                <h1>Cadastre-se</h1>
-                <p>Preencha o formulário abaixo para se cadastrar como voluntário ou doador da ONG Solidária.</p>
-                
-                <form id="registration-form" class="registration-form" novalidate>
+    <main>
+        <div class="grid">
+            <div class="card" style="grid-column: span 12;">
+                <h2>Cadastre-se</h2>
+                <form id="formCadastro">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
-                        
                         <div class="form-group">
-                            <label for="fullname">Nome Completo *</label>
-                            <input type="text" id="fullname" name="fullname" required 
-                                   placeholder="Digite seu nome completo" 
-                                   minlength="3" maxlength="100">
-                            <span class="error-message" id="fullname-error"></span>
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required minlength="3" maxlength="100">
                         </div>
-                        
                         <div class="form-group">
                             <label for="email">E-mail *</label>
-                            <input type="email" id="email" name="email" required 
-                                   placeholder="seu.email@exemplo.com">
-                            <span class="error-message" id="email-error"></span>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="cpf">CPF *</label>
-                            <input type="text" id="cpf" name="cpf" required 
-                                   placeholder="000.000.000-00" 
-                                   pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
-                                   maxlength="14">
-                            <span class="error-message" id="cpf-error"></span>
+                            <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
                         </div>
-                        
                         <div class="form-group">
-                            <label for="phone">Telefone *</label>
-                            <input type="tel" id="phone" name="phone" required 
-                                   placeholder="(11) 99999-9999" 
-                                   pattern="\(\d{2}\)\s\d{4,5}-\d{4}" 
-                                   maxlength="15">
-                            <span class="error-message" id="phone-error"></span>
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(11) 99999-9999">
                         </div>
-                        
                         <div class="form-group">
-                            <label for="birthdate">Data de Nascimento *</label>
-                            <input type="date" id="birthdate" name="birthdate" required 
-                                   min="1900-01-01" max="2023-12-31">
-                            <span class="error-message" id="birthdate-error"></span>
+                            <label for="dataNascimento">Data de Nascimento *</label>
+                            <input type="date" id="dataNascimento" name="dataNascimento" required>
                         </div>
                     </fieldset>
-                    
+
                     <fieldset>
                         <legend>Endereço</legend>
-                        
-                        <div class="form-group">
-                            <label for="address">Endereço *</label>
-                            <input type="text" id="address" name="address" required 
-                                   placeholder="Rua, número, complemento" 
-                                   minlength="5" maxlength="200">
-                            <span class="error-message" id="address-error"></span>
-                        </div>
-                        
                         <div class="form-group">
                             <label for="cep">CEP *</label>
-                            <input type="text" id="cep" name="cep" required 
-                                   placeholder="00000-000" 
-                                   pattern="\d{5}-\d{3}" 
-                                   maxlength="9">
-                            <span class="error-message" id="cep-error"></span>
+                            <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
                         </div>
-                        
                         <div class="form-group">
-                            <label for="city">Cidade *</label>
-                            <input type="text" id="city" name="city" required 
-                                   placeholder="Digite sua cidade" 
-                                   minlength="3" maxlength="100">
-                            <span class="error-message" id="city-error"></span>
+                            <label for="endereco">Endereço *</label>
+                            <input type="text" id="endereco" name="endereco" required>
                         </div>
-                        
                         <div class="form-group">
-                            <label for="state">Estado *</label>
-                            <select id="state" name="state" required>
-                                <option value="">Selecione seu estado</option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
+                            <label for="cidade">Cidade *</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="estado">Estado *</label>
+                            <select id="estado" name="estado" required>
+                                <option value="">Selecione</option>
+                                <!-- Opções dos estados -->
                             </select>
-                            <span class="error-message" id="state-error"></span>
                         </div>
                     </fieldset>
-                    
-                    <fieldset>
-                        <legend>Como você gostaria de participar?</legend>
-                        
-                        <div class="form-group">
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="volunteer" name="participation" value="volunteer">
-                                <label for="volunteer">Voluntariado</label>
-                            </div>
-                            
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="donor" name="participation" value="donor">
-                                <label for="donor">Doações</label>
-                            </div>
-                            
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="newsletter" name="participation" value="newsletter">
-                                <label for="newsletter">Receber newsletter</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    
-                    <div class="form-actions">
-                        <button type="submit" class="btn-primary">Enviar Cadastro</button>
-                        <button type="reset" class="btn-secondary">Limpar Formulário</button>
-                    </div>
+
+                    <button type="submit" class="btn">Cadastrar</button>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer role="contentinfo">
-        <!-- Mesma estrutura do footer da página inicial -->
+    <footer>
+        <p>&copy; 2024 ONG Transforma Vida. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        // Aplicar máscaras
+        document.getElementById('cpf').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 11) {
+                value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+            }
+            e.target.value = value;
+        });
+
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 11) {
+                value = value.replace(/(\d{2})(\d)/, '($1) $2');
+                value = value.replace(/(\d{5})(\d)/, '$1-$2');
+            }
+            e.target.value = value;
+        });
+
+        document.getElementById('cep').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 8) {
+                value = value.replace(/(\d{5})(\d)/, '$1-$2');
+            }
+            e.target.value = value;
+        });
+
+        // Menu Hambúrguer
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
     <script src="../js/scripts.js"></script>
 </body>
 </html>
