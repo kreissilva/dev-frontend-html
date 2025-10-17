@@ -11,8 +11,6 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Front-end, com o objet
 
 ## Tecnologias
 - HTML5
-- CSS3
-- JavaScript
 
 ## Como executar
 1. Clone o repositório
